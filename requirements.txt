@@ -1,0 +1,10 @@
+numpy<2.0
+opencv-python
+open3d==0.15.*
+pye57
+pyfqmr
+tqdm
+numba
+scipy
+seaborn
+notebook
