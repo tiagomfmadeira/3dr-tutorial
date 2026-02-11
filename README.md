@@ -1,7 +1,4 @@
-# 3D Reconstruction Tutorial: Data Processing, Surface Reconstruction, and Texture Mapping
-
-Madeira, T.; Dal'Col, L.; Oliveira, M.; Dias, P. (2024) "3D Reconstruction Tutorial: Data Processing, Surface Reconstruction, and Texture Mapping". 
-International Conference on 3D Web Technology (Web3D 2024); Guimarães, Portugal.
+# [3D Reconstruction Tutorial: Data Processing, Surface Reconstruction, and Texture Mapping](https://www.researchgate.net/publication/385525427_3D_Reconstruction_Tutorial_Data_Processing_Surface_Reconstruction_and_Texture_Mapping)
 
 ![biblioteca-framed](https://github.com/user-attachments/assets/f62e4336-a06d-4637-9853-b6efd357ceb1)
 
@@ -52,3 +49,9 @@ jupyter notebook
 conda deactivate 3dr_tutorial
 conda remove -n 3dr_tutorial -all
 ```
+
+---
+
+## License
+
+Distributed under the **GPL-3.0 License**. See [`LICENSE`](LICENSE) for more information.
