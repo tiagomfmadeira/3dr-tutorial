@@ -1,3 +1,6 @@
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 <p align="center">
   <a href="https://www.researchgate.net/publication/385525427_3D_Reconstruction_Tutorial_Data_Processing_Surface_Reconstruction_and_Texture_Mapping">
     <img src="https://user-images.githubusercontent.com/15963210/178556842-e1e7e1c0-206d-4960-82a5-3935c5cc60b4.png" alt="Logo" width="150"><br>
