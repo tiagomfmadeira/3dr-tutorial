@@ -1,4 +1,11 @@
-# [3D Reconstruction Tutorial: Data Processing, Surface Reconstruction, and Texture Mapping](https://www.researchgate.net/publication/385525427_3D_Reconstruction_Tutorial_Data_Processing_Surface_Reconstruction_and_Texture_Mapping)
+<p align="center">
+  <a href="https://www.researchgate.net/publication/385525427_3D_Reconstruction_Tutorial_Data_Processing_Surface_Reconstruction_and_Texture_Mapping">
+    <img src="https://user-images.githubusercontent.com/15963210/178556842-e1e7e1c0-206d-4960-82a5-3935c5cc60b4.png" alt="Logo" width="150"><br>
+    <b><span style="font-size: 28px;">
+      3D Reconstruction Tutorial: Data Processing, Surface Reconstruction, and Texture Mapping
+    </span></b>
+  </a>
+</p>
 
 ![biblioteca-framed](https://github.com/user-attachments/assets/f62e4336-a06d-4637-9853-b6efd357ceb1)
 
