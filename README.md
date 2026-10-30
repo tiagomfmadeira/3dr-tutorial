@@ -14,6 +14,8 @@
 
 ## Setup
 
+Requires Conda.
+
 ```bash
 git clone https://github.com/tiagomfmadeira/3dr-tutorial.git
 cd 3dr-tutorial
@@ -22,26 +24,10 @@ conda activate 3dr_tutorial
 python -m pip install .
 ```
 
-Use Python 3.9 with the pinned Open3D version. Dependencies are
-defined in `pyproject.toml`.
-
 ## Tutorial data
 
-Download [camera cache v1.0.0 from Zenodo](https://doi.org/10.5281/zenodo.23805485).
-See [archive contents](docs/DATASET_README.md).
-
-Extract the archive into `src/` so the notebook can find:
-
-```text
-src/
-  3DR_Tutorial.ipynb
-  cache/
-    camera_data.pickle
-```
-
-The cache is the intended tutorial input. The original E57 and precomputed
-meshes are not needed. Code stays in this repository; the download contains
-only data and usage/license notes.
+Download the [tutorial data](https://doi.org/10.5281/zenodo.23805485)
+and extract it into `src/`, producing `src/cache/camera_data.pickle`.
 
 ## Run
 
