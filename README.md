@@ -12,56 +12,48 @@
 
 ![biblioteca-framed](https://github.com/user-attachments/assets/f62e4336-a06d-4637-9853-b6efd357ceb1)
 
----
-
-It is recommended that you use Conda to create a python virtual environment so it is easier to manage dependencies and cleanup.\
-To install Conda, head over to [Installing conda — conda 24.7.2.dev87 documentation](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)\
-Miniconda will suffice, but feel free to install the Anaconda Distribution.
-
----
-
-Once Conda has been successfully installed, open the prompt and let's create a python virtual environment (venv):
+## Setup
 
 ```bash
-conda create -n 3dr_tutorial python==3.9
-```
-
-Once it is created, we must activate the environment:
-
-```bash
+git clone https://github.com/tiagomfmadeira/3dr-tutorial.git
+cd 3dr-tutorial
+conda create -n 3dr_tutorial python=3.9 pip -y
 conda activate 3dr_tutorial
+python -m pip install .
 ```
- 
- You should now see **(3dr_tutorial)** as a start of line on the cli instead of **(base)**. †
 
----
+Use Python 3.9 with the pinned Open3D version. Dependencies are
+defined in `pyproject.toml`.
 
-Download the contents of this folder: [3dr_tutorial](https://uapt33090-my.sharepoint.com/:f:/g/personal/tiagomadeira_ua_pt/EpT8T-TXWaFBjAZkjcvxr7kB5Zb2afHl2z1BUuYnCr5qRg?e=SsoUzl)
-to your desired working directory.\
-Let's now install all the required dependencies for our project.
+## Tutorial data
+
+Download [camera cache v1.0.0 from Zenodo](https://doi.org/10.5281/zenodo.23805485).
+See [archive contents](docs/DATASET_README.md).
+
+Extract the archive into `src/` so the notebook can find:
+
+```text
+src/
+  3DR_Tutorial.ipynb
+  cache/
+    camera_data.pickle
+```
+
+The cache is the intended tutorial input. The original E57 and precomputed
+meshes are not needed. Code stays in this repository; the download contains
+only data and usage/license notes.
+
+## Run
 
 ```bash
-cd <working_dir>
-pip install -r requirements.txt
+cd src
+python -m notebook
 ```
 
-We are now ready to open up our jupyter notebook.
-
-```bash
-jupyter notebook
-```
-
----
-
-† If at any point you would like to remove this environment and start over, you can do so by deactivating and removing it using the following commands:
-
-```bash
-conda deactivate 3dr_tutorial
-conda remove -n 3dr_tutorial -all
-```
-
----
+Open `3DR_Tutorial.ipynb` and run the cells in order. In VS Code, select the
+`3dr_tutorial` environment as the notebook kernel. Generated meshes and textures
+are written to `src/output/`.
 
 ## License
 
-Distributed under the **GPL-3.0 License**. See [`LICENSE`](LICENSE) for more information.
+Code: [GPL-3.0](LICENSE). Tutorial data: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

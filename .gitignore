@@ -1,0 +1,11 @@
+/release/
+/src/cache/
+/src/output/
+__pycache__/
+.ipynb_checkpoints/
+/.browser-tools/
+/.browser-profile/
+/.venv/
+/build/
+*.egg-info/
+/.vscode/settings.json

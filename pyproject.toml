@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "3dr-tutorial"
+version = "1.0.0"
+description = "Environment for the 3D reconstruction tutorial notebooks"
+requires-python = ">=3.9,<3.10"
+dependencies = [
+    "numpy<2.0",
+    "opencv-python",
+    "open3d==0.15.*",
+    "pye57",
+    "pyfqmr",
+    "tqdm",
+    "numba",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "notebook",
+]
+
+[tool.setuptools]
+# Install dependencies; the notebook and helper modules run directly from src/.
+py-modules = []
